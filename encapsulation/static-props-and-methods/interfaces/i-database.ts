@@ -1,4 +1,4 @@
-interface IDatabase {
+export interface IDatabase {
   ip: string;
   user: string;
   password: string;

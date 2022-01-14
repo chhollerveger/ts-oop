@@ -1,9 +1,8 @@
-import { INotifier } from "./interfaces/i-notifier";
 import { IPhone } from "./interfaces/i-phone";
 import { IUser } from "./interfaces/i-user";
 import { Notifier } from "./notifier";
 
-class SMS extends Notifier implements INotifier, IPhone {
+class SMS extends Notifier implements IPhone {
 
   phoneNumber: string;
 

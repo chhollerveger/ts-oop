@@ -1,3 +1,5 @@
+import { IDatabase } from "./interfaces/i-database";
+
 class Database {
 
   static LOCAL = "127.0.0.1";

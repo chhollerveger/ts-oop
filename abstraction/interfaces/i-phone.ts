@@ -1,3 +1,3 @@
-export interface IPhone {
+export default interface IPhone {
   phoneNumber: string;
 }

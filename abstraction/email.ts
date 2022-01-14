@@ -1,8 +1,9 @@
-import { IEmail } from "./interfaces/i-email";
-import { IUser } from "./interfaces/i-user";
-import { Notifier } from "./notifier";
+import IEmail from "./interfaces/i-email";
+import INotifier from "./interfaces/i-notifier";
+import IUser from "./interfaces/i-user";
+import Notifier from "./notifier";
 
-class Email extends Notifier implements IEmail {
+class Email extends Notifier implements INotifier, IEmail {
 
   name: string;
   email: string;

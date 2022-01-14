@@ -1,6 +1,6 @@
-import { IUser } from "./i-user";
+import IUser from "./i-user";
 
-export interface INotifier {
+export default interface INotifier {
 
   send(user: IUser): boolean;
 

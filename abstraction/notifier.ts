@@ -1,7 +1,6 @@
-import { INotifier } from "./interfaces/i-notifier";
-import { IUser } from "./interfaces/i-user";
+import IUser from "./interfaces/i-user";
 
-export abstract class Notifier implements INotifier {
+export default abstract class Notifier {
 
   abstract send(user: IUser): boolean;
 

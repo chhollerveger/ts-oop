@@ -1,6 +1,6 @@
 import { IDatabase } from "./interfaces/i-database";
 
-class Database {
+export default class Database {
 
   static LOCAL = "127.0.0.1";
   static MYSQL = "MySQL";

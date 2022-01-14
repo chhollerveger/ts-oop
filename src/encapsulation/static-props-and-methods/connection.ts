@@ -1,3 +1,5 @@
+import Database from "./database";
+
 const connection = Database.factory({
   type: Database.MYSQL,
   password: "root",

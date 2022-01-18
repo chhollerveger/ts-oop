@@ -1,4 +1,4 @@
-import Database from "./database";
+import Database from "./models/database";
 
 const connection = Database.factory({
   type: Database.MYSQL,

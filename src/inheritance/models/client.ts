@@ -1,4 +1,6 @@
-class Client extends Model {
+import Model from "./model";
+
+export default class Client extends Model {
 
   email: string;
   company: string;

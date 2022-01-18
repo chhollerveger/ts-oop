@@ -1,9 +1,9 @@
-import IEmail from "./interfaces/i-email";
-import INotifier from "./interfaces/i-notifier";
-import IUser from "./interfaces/i-user";
+import IEmail from "../interfaces/i-email";
+import INotifier from "../interfaces/i-notifier";
+import IUser from "../interfaces/i-user";
 import Notifier from "./notifier";
 
-class Email extends Notifier implements INotifier, IEmail {
+export default class Email extends Notifier implements INotifier, IEmail {
 
   name: string;
   email: string;
@@ -14,7 +14,7 @@ class Email extends Notifier implements INotifier, IEmail {
     this.email = user.email;
   }
 
-  send(user: IUser): boolean {
+  send(): boolean {
     console.log(`Sending email to the user ${this.email} ...`);
     return true;
   }

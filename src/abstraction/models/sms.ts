@@ -1,9 +1,10 @@
-import INotifier from "./interfaces/i-notifier";
-import IPhone from "./interfaces/i-phone";
-import IUser from "./interfaces/i-user";
+import INotifier from "../interfaces/i-notifier";
+import IPhone from "../interfaces/i-phone";
+import IUser from "../interfaces/i-user";
 import Notifier from "./notifier";
 
-class SMS extends Notifier implements INotifier, IPhone {
+
+export default class SMS extends Notifier implements INotifier, IPhone {
 
   phoneNumber: string;
 
@@ -12,7 +13,7 @@ class SMS extends Notifier implements INotifier, IPhone {
     this.phoneNumber = user.phone;
   }
 
-  send(user: IUser): boolean {
+  send(): boolean {
     console.log(`Sending SMS to User ${this.phoneNumber} ...`);
     return true;
   }

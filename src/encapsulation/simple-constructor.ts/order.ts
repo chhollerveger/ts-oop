@@ -1,4 +1,4 @@
-class Order {
+export default class Order {
 
   id: number = 1;
 

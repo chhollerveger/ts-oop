@@ -1,4 +1,4 @@
-class Bank {
+export default class Bank {
 
   private valueInTheSafe: number = 10000;
 

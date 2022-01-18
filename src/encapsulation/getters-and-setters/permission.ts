@@ -1,4 +1,4 @@
-class Permission {
+export default class Permission {
 
   constructor(
     private _name: string,

@@ -1,4 +1,4 @@
-class Residence {
+export default class Residence {
 
   public color: string;
   public address: object;

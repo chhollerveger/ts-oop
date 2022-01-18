@@ -1,4 +1,4 @@
-import { IDatabase } from "./interfaces/i-database";
+import { IDatabase } from "../interfaces/i-database";
 
 export default class Database {
 
